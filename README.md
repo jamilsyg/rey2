@@ -1,5 +1,6 @@
 ### INFO 
 Stil in devsec 🗿
+KALO GK MAU ERROR FORK AJA BASE ORIGINAL!
 
 Original : [`DikaArdnt/Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
 
