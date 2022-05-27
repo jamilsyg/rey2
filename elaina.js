@@ -261,11 +261,7 @@ module.exports = elaina = async (elaina, m, chatUpdate, store) => {
         const reply = (teks) => {
             elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `${time}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/reply.jpg`),"sourceUrl": "https://skylarkaf.github.io/"}}}, { quoted: m})
         }
-        
-        //member? idk
-        let picaks = [flaming,fluming,flarun,flasmurf]
-		let picak = picaks[Math.floor(Math.random() * picaks.length)]
-        
+                
         // Respon Cmd with media
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
         let hash = global.db.data.sticker[m.msg.fileSha256.toString('base64')]
@@ -2680,7 +2676,6 @@ let crp = `• Runtime: ${runtime(process.uptime())}`
 let sks = ` *╭───「 Status 」*
  *│* • HostName: ${os.hostname()}
  *│* • Platform: ${os.platform()}
- *│* • Speed: ${latensie.toFixed(4)} miliseconds
  *│* • TotalUser: ${Object.keys(global.db.data.users).length}
  *│* • ServerTime: ${time}
  *├──「 IndoTime 」*
