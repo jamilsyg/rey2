@@ -2,6 +2,8 @@
    * Create By Dika Ardnt.
    * Recode By SkylarKaf
    * Follow https://github.com/DikaArdnt & https://github.com/SkylarKaf      
+     #Note! 
+  Script ini masih dalam pengembangan jika ga mau eror fork aja base original
 */
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
@@ -1055,11 +1057,39 @@ case 'mining': case 'mine':{
 
 //═══════════[Fun Menu
 
-case 'rate':
+/*
+case 'apakah':{
+apakah = {text}
+const apa =['Iya','Tidak','Bisa Jadi','Coba Ulangi','Yntkts','Tanya Tuhan','Lah kock bsa gtu ya banh']
+const kah = apa[Math.floor(Math.random() * apa.length)]
+elaina.sendMessage(from, 'Pertanyaan : *'+apakah+'*\n\nJawaban : '+ kah, text, { quoted: m })
+}
+break*/
+
+case 'apakah':
+	if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
+	const lel = [`Gk tau`,`Iya`,`Coba ulangi`,`YNTKTS`,`BisA jadi`]
+	const kahk = lel[Math.floor(Math.random() * lel.length)]
+    elaina.sendMessage(from, { text: `Pertanyaan : What ${q}\nJawaban : ${kahk}` }, { quoted: m })
+	break
+case 'bisakah':
+	if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
+	const bisa = [`Bisa`,`Tidak`,`Gak!`,`Manuk akal`,`Kurang akal`,`Mimpi Dek`]
+	const ga = bisa[Math.floor(Math.random() * bisa.length)]
+    elaina.sendMessage(from, { text: `Pertanyaan : Can ${q}\nJawaban : ${ga}` }, { quoted: m })
+	break
+case 'kapankah':
+    if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
+	const kapan =['Besok','Lusa','4 Hari Lagi','5 Hari Lagi','6 Hari Lagi','1 Minggu Lagi','2 Minggu Lagi','3 Minggu Lagi','1 Bulan Lagi','2 Bulan Lagi','3 Bulan Lagi','4 Bulan Lagi','5 Bulan Lagi','6 Bulan Lagi','1 Tahun Lagi','2 Tahun Lagi','3 Tahun Lagi','4 Tahun Lagi','5 Tahun Lagi','6 Tahun Lagi','1 Abad lagi','3 Hari Lagi','Tidak Akan Pernah']
+    const kapankah = kapan[Math.floor(Math.random() * kapan.length)]
+    elaina.sendMessage(from, { text: `Pertanyaan : ${q}\nJawaban : ${kapankah}` }, { quoted: m })
+	break					
+case 'rate':{
 	   if (!text) return replay(`Contoh: ${prefix + command} gay`)
        const ra = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
 	   const te = ra[Math.floor(Math.random() * ra.length)]
        elaina.sendMessage(from, { text: `Rate : ${q}\nJawaban : *${te}%*` }, { quoted: m })
+       }
 	   break
 
 case 'family100': {
@@ -2168,6 +2198,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(`https://uplo
                 elaina.sendMessage(m.chat, {document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3`}, { quoted : m })
             }        
             break
+            
             case 'ig': case 'igdl': case 'instagram': {
                 if (!text) throw 'Masukan Query'
                 if (!isUrl(args[0]) && !args[0].includes('instagram.com')) throw 'Link yang kamu berikan tidak.valid'
@@ -2443,14 +2474,13 @@ case 'menu': case 'help':{
 │ ⫹⫺ HostName: ${os.hostname()}
 │ ⫹⫺ Platform : ${os.platform()}
 │ ⫹⫺ TotalUser: ${Object.keys(global.db.data.users).length}
-│ ⫹⫺ Speed: ${latensie.toFixed(4)} miliseconds
 ╰──────⭓`
 let message = await prepareWAMessageMedia({ video: await getBuffer(global.gifmp4), gifPlayback: true }, { upload: elaina.waUploadToServer })
      const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
       templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
-           hydratedContentText: ` *• Information* `,
+           hydratedContentText: `*• Information* `,
                hydratedFooterText: anu,
                             hydratedButtons: [{
                                 urlButton: {
@@ -2589,6 +2619,10 @@ let message = await prepareWAMessageMedia({ video: await getBuffer(global.gifmp4
   > ${prefix}berburu
   
   *[ 🎲 ] Fun Menu*
+  > ${prefix}apakah
+  > ${prefix}kapankah
+  > ${prefix}bisakah
+  > ${prefix}rate
   > ${prefix}family100
   > ${prefix}tebak [option]
   > ${prefix}math [option]
@@ -3059,7 +3093,11 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
             break
             case 'funmenu': {
             sxs = `⭔ Don't forget to donate :)`
-	            anu = `  *[ 🎲 ]  Fun Menu*              
+	            anu = `  *[ 🎲 ]  Fun Menu* 
+  > ${prefix}apakah
+  > ${prefix}kapankah
+  > ${prefix}bisakah
+  > ${prefix}rate
   > ${prefix}family100
   > ${prefix}tebak [option]
   > ${prefix}math [option]
