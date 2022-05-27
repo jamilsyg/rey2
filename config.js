@@ -49,7 +49,7 @@ global.limitawal = {
    potionawal: 1
 }
 
-global.gifmp4 = "https://a.uguu.se/HBJheKuH.mp4",
+global.gifmp4 = "https://uploader.caliph.my.id/file/yUnMtkqgmU.mp4",
 global.menuimg = "https://uploader.caliph.my.id/file/mNV5rMkeoE.jpg"
 
 let file = require.resolve(__filename)
