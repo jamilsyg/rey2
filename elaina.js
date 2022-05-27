@@ -5,6 +5,7 @@
      #Note! 
   Script ini masih dalam pengembangan jika ga mau eror fork aja base original
 */
+
 require('./config')
 const { BufferJSON, WA_DEFAULT_EPHEMERAL, generateWAMessageFromContent, proto, generateWAMessageContent, generateWAMessage, prepareWAMessageMedia, areJidsSameUser, getContentType } = require('@adiwajshing/baileys')
 const fs = require('fs')
@@ -1070,13 +1071,13 @@ case 'apakah':
 	if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
 	const lel = [`Gk tau`,`Iya`,`Coba ulangi`,`YNTKTS`,`BisA jadi`]
 	const kahk = lel[Math.floor(Math.random() * lel.length)]
-    elaina.sendMessage(from, { text: `Pertanyaan : What ${q}\nJawaban : ${kahk}` }, { quoted: m })
+    elaina.sendMessage(from, { text: `Pertanyaan : ${q}\nJawaban : ${kahk}` }, { quoted: m })
 	break
 case 'bisakah':
 	if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
 	const bisa = [`Bisa`,`Tidak`,`Gak!`,`Manuk akal`,`Kurang akal`,`Mimpi Dek`]
 	const ga = bisa[Math.floor(Math.random() * bisa.length)]
-    elaina.sendMessage(from, { text: `Pertanyaan : Can ${q}\nJawaban : ${ga}` }, { quoted: m })
+    elaina.sendMessage(from, { text: `Pertanyaan : ${q}\nJawaban : ${ga}` }, { quoted: m })
 	break
 case 'kapankah':
     if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
