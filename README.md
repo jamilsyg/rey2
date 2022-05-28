@@ -1,7 +1,6 @@
 ### INFO 
-Stil in devsec 🗿
+Sc nya sampe sini aja dah kyk nya, gw pen pindah ke Typescript 😅
 
-KALO GK MAU ERROR FORK AJA BASE ORIGINAL!
 
 Original : [`DikaArdnt/Hisoka-Morou`](https://github.com/DikaArdnt/Hisoka-Morou)
 
