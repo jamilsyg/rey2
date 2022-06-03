@@ -233,22 +233,7 @@ module.exports = elaina = async (elaina, m, chatUpdate, store) => {
 		setting.status = new Date() * 1
 	    }
 	}
-	    
-	  // Anti Link
-        if (db.data.chats[m.chat].antilink) {
-        if (budy.match(`chat.whatsapp.com`)) {
-        replay(`「 ANTI LINK 」\n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
-        if (!isBotAdmins) return replay(`Jadikan Bot Sebagai Admin Terlebih Dahulu`)
-        let gclink = (`https://chat.whatsapp.com/`+await elaina.groupInviteCode(m.chat))
-        let isLinkThisGc = new RegExp(gclink, 'i')
-        let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return replay(`「 ANTI LINK 」\n\nSystem Mendeteksi Kamu Mengirim Link Grub Ini,\n*• Pembatalan Kick Succes ✓*`)
-        if (isAdmins) return replay(`「 ANTI LINK 」\n\nSystem Mendeteksi Kamu Adalah Admin Grub,\n*• Pembatalan Kick Succes ✓*`)
-        if (isCreator) return replay(`「 ANTI LINK 」\n\nSystem Mendeteksi Kamu Adalah Owner Bot,\n*• Pembatalan Kick Succes ✓*`)
-        elaina.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
-        }
-        }
-        
+	            
       // Mute Chat
       if (db.data.chats[m.chat].mute && !isAdmins && !isCreator) {
       return
@@ -264,7 +249,22 @@ module.exports = elaina = async (elaina, m, chatUpdate, store) => {
         const reply = (teks) => {
             elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `${time}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/reply.jpg`),"sourceUrl": "https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci"}}}, { quoted: m})
         }
-                
+         
+	  // Anti Link
+        if (db.data.chats[m.chat].antilink) {
+        if (budy.match(`chat.whatsapp.com`)) {
+        replay(`「 ANTI LINK 」\n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
+        if (!isBotAdmins) return replay(`Jadikan Bot Sebagai Admin Terlebih Dahulu`)
+        let gclink = (`https://chat.whatsapp.com/`+await elaina.groupInviteCode(m.chat))
+        let isLinkThisGc = new RegExp(gclink, 'i')
+        let isgclink = isLinkThisGc.test(m.text)
+        if (isgclink) return replay(`「 ANTI LINK 」\n\nSystem Mendeteksi Kamu Mengirim Link Grub Ini,\n*• Pembatalan Kick Succes ✓*`)
+        if (isAdmins) return replay(`「 ANTI LINK 」\n\nSystem Mendeteksi Kamu Adalah Admin Grub,\n*• Pembatalan Kick Succes ✓*`)
+        if (isCreator) return replay(`「 ANTI LINK 」\n\nSystem Mendeteksi Kamu Adalah Owner Bot,\n*• Pembatalan Kick Succes ✓*`)
+        elaina.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
+        }
+        }
+       
         // Respon Cmd with media
         if (isMedia && m.msg.fileSha256 && (m.msg.fileSha256.toString('base64') in global.db.data.sticker)) {
         let hash = global.db.data.sticker[m.msg.fileSha256.toString('base64')]
