@@ -256,13 +256,13 @@ module.exports = elaina = async (elaina, m, chatUpdate, store) => {
 
      // Target
         const replySc = (teks) => {
-            elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `Copas? Kasih Credit jan lupa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/github.jpg`),"sourceUrl": "https://github.com/SkylarKaf"}}}, { quoted: m})
+            elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `Copas? Kasih Credit jan lupa`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/github.jpg`),"sourceUrl": "https://github.com/jamilsyg"}}}, { quoted: m})
         }       
         const replay = (teks) => {
-            elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `${time}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/reply.jpg`),"sourceUrl": "https://skylarkaf.github.io/"}}}, { quoted: m})
+            elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `${time}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/reply.jpg`),"sourceUrl": "https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci"}}}, { quoted: m})
         }
         const reply = (teks) => {
-            elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `${time}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/reply.jpg`),"sourceUrl": "https://skylarkaf.github.io/"}}}, { quoted: m})
+            elaina.sendMessage(m.chat, { text: teks, contextInfo:{"externalAdReply": {"title": `${global.botnma}`,"body": `${time}`, "previewType": "PHOTO","thumbnailUrl": ``,"thumbnail": fs.readFileSync(`./Media/reply.jpg`),"sourceUrl": "https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci"}}}, { quoted: m})
         }
                 
         // Respon Cmd with media
@@ -652,7 +652,7 @@ break
 *📌 Note!*
 
 • Bot ini masih dalam pengembangan, wajar jika banyak bug/error Harap maklumi 🙏
-  ~ skylarkaf`
+  ~ Riyadh`
    replay(anu)
       }
    break
@@ -661,7 +661,7 @@ break
             }
             break
    case 'sc': case 'script': case 'sourcecode':{
-            replySc('*• Script Base Original:*\nhttps://github.com/DikaArdnt/Hisoka-Morou\n\n*• Edited Script:*\nhttps://github.com/SkylarKaf/Elaina-MD\n\nDont Forget Give Star :)')
+            replySc('*• Script Base Original:*\nhttps://github.com/DikaArdnt/Hisoka-Morou\n\n*• Edited Script:*\nhttps://github.com/jamilsyg/rey2\n\nDont Forget Give Star :)')
             }
             break
    case 'donate': case 'donasi':{
@@ -679,12 +679,8 @@ break
  case 'tqtt': case'tqtq':{
  efhzm =`*Big Thanks To:*
  
-• DikaArdnt 
-https://github.com/DikaArdnt
-• SkylarKaf
-https://github.com/SkylarKaf
-• Deff
-https://github.com/DEFF1602`
+• Riyadh 
+https://github.com/jamilsyg`
 reply(efhzm)}
    break
    case 'ping': case 'speed': {
@@ -1750,7 +1746,7 @@ case 'bcgc': case 'bcgroup': {
                     let btn = [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }                            
                             }]
                       fatihgans = fs.readFileSync('./Media/broadcast.jpg')
@@ -2443,7 +2439,7 @@ let message = await prepareWAMessageMedia({ video: await getBuffer(global.gifmp4
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2468,8 +2464,7 @@ case 'menu': case 'help':{
   anu = `╭─⭓「 WhatsApp Bot 」                
 │• Botname: ${global.botnma}
 │• Owner: ${global.ownernma}
-│• AuthorBase: DikaArdnt
-├───⭓「 About 」
+├───⭓「 Tentang 」
 │ ⫹⫺ Library: Baileys-Md
 │ ⫹⫺ Language : Javascript
 │ ⫹⫺ HostName: ${os.hostname()}
@@ -2481,17 +2476,17 @@ let message = await prepareWAMessageMedia({ video: await getBuffer(global.gifmp4
       templateMessage: {
          hydratedTemplate: {
            videoMessage: message.videoMessage,
-           hydratedContentText: `*• Information* `,
+           hydratedContentText: `*• Informasi* `,
                hydratedFooterText: anu,
                             hydratedButtons: [{
                                 urlButton: {
-                                    displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    displayText: 'Group',
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                             }, {
                             	urlButton: {
                                 displayText: 'Source Code',
-                                    url: 'https://github.com/DikaArdnt/Hisoka-Morou'
+                                    url: 'https://github.com/jamilsyg/rey2'
                                 }
                             }, {
                                 quickReplyButton: {
@@ -2675,7 +2670,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                             },
                             {
@@ -2708,16 +2703,16 @@ case 'command': case 'listmenu':{
          latensie = speed() - timestampe
 let crp = `• Runtime: ${runtime(process.uptime())}`
 
-let sks = ` *╭───「 Status 」*
- *│* • HostName: ${os.hostname()}
- *│* • Platform: ${os.platform()}
- *│* • TotalUser: ${Object.keys(global.db.data.users).length}
- *│* • ServerTime: ${time}
- *├──「 IndoTime 」*
- *│* • Wit: ${wit}
- *│* • Wita: ${wita}
- *│* • Wib: ${wib}
- *╰───────⭓*`
+let sks = ` ╭───「 Status 」
+ │ • HostName: ${os.hostname()}
+ │ • Platform: ${os.platform()}
+ │ • TotalUser: ${Object.keys(global.db.data.users).length}
+ │ • ServerTime: ${time}
+ ├──「 IndoTime 」*
+ │ • Wit: ${wit}
+ │ • Wita: ${wita}
+ │ • Wib: ${wib}
+ ╰───────⭓`
 let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
    listMessage :{
      title: ``,
@@ -2835,7 +2830,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -2878,7 +2873,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -2918,7 +2913,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -2975,7 +2970,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -3034,7 +3029,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -3073,7 +3068,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -3114,7 +3109,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -3158,7 +3153,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -3198,7 +3193,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
@@ -3239,7 +3234,7 @@ let message = await prepareWAMessageMedia({ image: await getBuffer(global.menuim
                             hydratedButtons: [{
                                 urlButton: {
                                     displayText: 'Profile',
-                                    url: 'https://s.id/Skylarkaf'
+                                    url: 'https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
                                 }
                               }, {
                                 quickReplyButton: {
