@@ -11,16 +11,16 @@ global.APIs = {
 }
 
 global.APIKeys = {
-	'https://zenzapis.xyz': 'Your Key',
+	'https://zenzapis.xyz': 'BagasPrdn',
 }
 
 // Other
-global.owner = ['6282331660134','6282331660134','6282331660134','6282331660134']
-global.premium = ['6282331660134']
-global.botnma = 'Elaina - MD'
-global.ownernma = 'Skylarkaf'
+global.owner = ['6289675134806']
+global.premium = ['6289675134806']
+global.botnma = 'Emilia - MD'
+global.ownernma = 'Riyadh'
 global.packname = '' 
-global.author = '⫹⫺ Created By : Elaina - MD\n⫹⫺ Owner : SkylarKaf\n⫹⫺ Instagram : @skylarkaf_\n⫹⫺ Website : https://s.id/Skylarkaf'
+global.author = '⫹⫺ Created By : Emilia - MD\n⫹⫺ Owner : Riyadh\n⫹⫺ Instagram : @bangreyy_54\n⫹⫺ Website : https://chat.whatsapp.com/Fs0c8M54Kj2CLEZx185yci'
 global.sessionName = 'Web'
 global.prefa = ['!','.','#']
 global.sp = '>'
